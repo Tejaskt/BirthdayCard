@@ -13,16 +13,28 @@
         android:theme="@style/Theme.BirthdayCard"
         tools:targetApi="31">
         <activity
-            android:name=".BussinessCard"
+            android:name=".BoxAnimation"
             android:exported="true"
-            android:label="@string/title_activity_bussiness_card"
+            android:label="@string/title_activity_box_animation"
             android:theme="@style/Theme.BirthdayCard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
+        <activity
+            android:name=".BussinessCard"
+            android:exported="true"
+            android:label="@string/title_activity_bussiness_card"
+            android:theme="@style/Theme.BirthdayCard">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Example"
             android:exported="false"
@@ -46,11 +58,6 @@
             android:exported="true"
             android:theme="@style/Theme.BirthdayCard">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
