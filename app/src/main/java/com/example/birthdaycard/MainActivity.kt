@@ -59,7 +59,9 @@ fun BirthdayGreetingWithImage(message: String, from: String) {
 
 @Composable
 fun BirthdayGreetingWithText(message: String, from: String) {
-    Column {
+    Column(
+
+    ) {
         Text(
             text = message,
             fontSize = 36.sp,
@@ -77,7 +79,7 @@ fun BirthdayGreetingWithText(message: String, from: String) {
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally)
-                .padding(start = 16.dp, end = 16.dp)
+                .padding(start = 16.dp, end = 16.dp),
         )
     }
 }

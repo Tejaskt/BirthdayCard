@@ -1,10 +1,13 @@
 package com.example.birthdaycard
 
+import android.graphics.Paint.Align
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.expandHorizontally
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -13,12 +16,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.birthdaycard.ui.theme.BirthdayCardTheme
+import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 class BussinessCard : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +34,7 @@ class BussinessCard : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background
                 ) {
-
+                    FinalCard()
                 }
             }
         }
@@ -52,6 +57,7 @@ fun FinalCard(
         ){
             FirstView()
         }
+        Spacer(modifier = Modifier.size(100.dp))
         Box(
             modifier = Modifier
                 .background(Color.Cyan)
@@ -66,15 +72,17 @@ fun FinalCard(
 @Composable
 fun FirstView() {
     val apkimg = painterResource(id = R.drawable.android_logo)
+
     Box {
-        Column {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             Image(
                 painter = apkimg,
                 contentDescription = null,
                 modifier = Modifier
-                    .offset(50.dp, 20.dp)
                     .fillMaxWidth(0.7f)
-                    .padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 16.dp)
+                    .padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 16.dp),
             )
             Text(
                 text = "Tejas Kanzariya",
@@ -109,41 +117,54 @@ fun SecoundView() {
         modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 16.dp)
     ) {
         Column(
-            modifier = Modifier.padding(start = 16.dp, end = 16.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 16.dp, end = 16.dp)
         ) {
             Row(
-                modifier = Modifier.padding(start = 16.dp, end = 16.dp)
+                modifier = Modifier.padding(start = 16.dp, end = 16.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+
             ) {
-                Image(painter = imgPhone, contentDescription = null)
+                Image(
+                    painter = imgPhone,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(40.dp)
+                )
                 Text(
-                    text = "+9737436797",
+                    text = "+123456789",
                     color = Color.Black,
                     fontWeight = FontWeight.Medium,
-                    fontSize = 16.sp,
+                    fontSize = 30.sp,
                     modifier = Modifier.offset(35.dp)
                 )
             }
+            Spacer(modifier = Modifier.size(30.dp))
             Row(
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp)
             ) {
-                Image(painter = imgShare, contentDescription = null)
+                Image(painter = imgShare, contentDescription = null, modifier = Modifier
+                    .size(40.dp))
                 Text(
                     text = "@tejas_kt_8",
                     color = Color.Black,
                     fontWeight = FontWeight.Medium,
-                    fontSize = 16.sp,
+                    fontSize = 30.sp,
                     modifier = Modifier.offset(35.dp)
                 )
             }
+            Spacer(modifier = Modifier.size(30.dp))
             Row(
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp)
             ) {
-                Image(painter = imgEmail, contentDescription = null)
+                Image(painter = imgEmail, contentDescription = null, modifier = Modifier
+                    .size(40.dp))
                 Text(
                     text = "tejaskt@gmail.com",
                     color = Color.Black,
                     fontWeight = FontWeight.Medium,
-                    fontSize = 16.sp,
+                    fontSize = 30.sp,
                     modifier = Modifier.offset(35.dp)
                 )
             }

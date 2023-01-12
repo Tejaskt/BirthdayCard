@@ -10,4 +10,5 @@
     <string name="title_activity_example">Example</string>
     <string name="title_activity_bussiness">Bussinessc</string>
     <string name="title_activity_bussiness_card">BussinessCard</string>
+    <string name="title_activity_box_animation">BoxAnimation</string>
 </resources>
