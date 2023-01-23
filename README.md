@@ -17,6 +17,8 @@ I Made This App In Practice.</h3>
   </p>
 </h4>
 
+<h2>-------------------------------</h2>
+
 <h1>Example Activity</h1>
 
 ![image](https://user-images.githubusercontent.com/101577007/214087342-50a0d165-e907-4c57-b925-f144e8e6e4e9.png)
@@ -27,6 +29,8 @@ I Made This App In Practice.</h3>
     You can see Image, Small Text, Paragraph and One simple button which is used to switch into the next activity.
   </p>
 </h4>
+
+<h2>-------------------------------</h2>
 
 <h1>Business Card Activity</h1>
 
@@ -40,7 +44,11 @@ I Made This App In Practice.</h3>
   </p>
 </h4>
 
+<h2>-------------------------------</h2>
+
 <h1>Box Animation Activity</h1>
+
+<h3> image is not avilable because of animation </h3>
 
 <h2>In This Activity</h2>
 <h3>
@@ -49,7 +57,9 @@ I Made This App In Practice.</h3>
    </p>
 </h3>
 
-<h1>Dice Rollar App</h1>
+<h2>-------------------------------</h2>
+
+<h1>Dice Rollar App Activity</h1>
 
 ![image](https://user-images.githubusercontent.com/101577007/214093418-b009fe9d-5cfb-46d6-ae98-ed108e7ba5fa.png)
 
@@ -60,4 +70,4 @@ I Made This App In Practice.</h3>
    </p>
 </h3>
 
-<h2>To Be Continued.../h2>
+<h2>To Be Continued.......</h2>
