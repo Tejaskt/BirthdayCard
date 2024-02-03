@@ -8,7 +8,7 @@ I Made This App In Practice.</h3>
 
 <h1>BirthDay Card Activity</h1>
 
-<img src="https://user-images.githubusercontent.com/101577007/214084745-2ddf4df0-01cf-4cd2-94fd-7a3e33129e59.png" width="300" height="200">
+<img src="https://user-images.githubusercontent.com/101577007/214084745-2ddf4df0-01cf-4cd2-94fd-7a3e33129e59.png" width="400" height="500">
 
 <h2>In This Activity</h2>
 <h4>
